@@ -346,7 +346,7 @@
  * Multiple extruders can be assigned to the same pin in which case
  * the fan will turn on when any selected extruder is above the threshold.
  */
-#define E0_AUTO_FAN_PIN -1
+#define E0_AUTO_FAN_PIN FAN1_PIN
 #define E1_AUTO_FAN_PIN -1
 #define E2_AUTO_FAN_PIN -1
 #define E3_AUTO_FAN_PIN -1
@@ -1742,14 +1742,14 @@
   #endif
 
   #if AXIS_IS_TMC(X2)
-    #define X2_CURRENT    658
+    #define X2_CURRENT    800
     #define X2_MICROSTEPS  64
     #define X2_RSENSE    0.11
     #define X2_CHAIN_POS    0
   #endif
 
   #if AXIS_IS_TMC(Y)
-    #define Y_CURRENT     654
+    #define Y_CURRENT     658
     #define Y_MICROSTEPS   64
     #define Y_RSENSE     0.11
     #define Y_CHAIN_POS     0
@@ -1763,8 +1763,8 @@
   #endif
 
   #if AXIS_IS_TMC(Z)
-    #define Z_CURRENT     800
-    #define Z_MICROSTEPS   16
+    #define Z_CURRENT     654
+    #define Z_MICROSTEPS   64
     #define Z_RSENSE     0.11
     #define Z_CHAIN_POS     0
   #endif
