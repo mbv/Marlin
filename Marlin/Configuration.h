@@ -927,7 +927,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 34, -23, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -34, -27, 0 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1218,13 +1218,6 @@
   // Set the number of grid points per dimension.
   #define GRID_MAX_POINTS_X 4
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
-
-  // Set the boundaries for probing (where the probe can reach).
-  //TODO
-  //#define LEFT_PROBE_BED_POSITION X_PROBE_OFFSET_FROM_EXTRUDER + 5
-  //#define RIGHT_PROBE_BED_POSITION (X_BED_SIZE - (10))
-  //#define FRONT_PROBE_BED_POSITION 15
-  //#define BACK_PROBE_BED_POSITION (Y_BED_SIZE + Y_PROBE_OFFSET_FROM_EXTRUDER - (5))
 
   // Probe along the Y axis, advancing X after each column
   //#define PROBE_Y_FIRST
